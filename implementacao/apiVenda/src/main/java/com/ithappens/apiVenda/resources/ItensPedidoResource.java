@@ -74,10 +74,5 @@ public class ItensPedidoResource {
 	public ItensPedido atualizar(@RequestBody ItensPedido itensPedido){
 		return itensPedidoRepository.save(itensPedido);
 	}
-	
-	/*@DeleteMapping("/itensPedido")
-	@ApiOperation(value = "Método responsável em deletar um Item de Pedido na base de dados.")
-	public void deletar(@RequestBody ItensPedido itensPedido){
-		itensPedidoRepository.delete(itensPedido);
-	}*/
+		
 }

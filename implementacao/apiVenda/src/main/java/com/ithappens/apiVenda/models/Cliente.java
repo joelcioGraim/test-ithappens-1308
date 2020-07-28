@@ -48,12 +48,7 @@ public class Cliente implements Serializable {
 
 	@Column(length = 7)
 	private String numero;
-
-	/* ============= Relacionamentos =============== */
-
-	/*@OneToMany(mappedBy = "cliente")
-	private Set<PedidoEstoque> pedidosEstoque;*/
-
+	
 	/* ============= Get / Set =============== */
 
 	public long getIdCliente() {
@@ -126,14 +121,6 @@ public class Cliente implements Serializable {
 
 	public void setNumero(String numero) {
 		this.numero = numero;
-	}
-
-	/*public Set<PedidoEstoque> getPedidosEstoque() {
-		return pedidosEstoque;
-	}
-
-	public void setPedidosEstoque(Set<PedidoEstoque> pedidosEstoque) {
-		this.pedidosEstoque = pedidosEstoque;
-	}*/
+	}	
 
 }

@@ -38,10 +38,7 @@ public class Estoque implements Serializable {
 	private BigDecimal quantidade;
 
 	/* ============= Relacionamentos =============== */
-
-	/*@OneToMany(mappedBy = "estoque")
-	private Set<Produto> produtos;
-*/
+	
 	@ManyToOne
 	@JoinColumn(name = "idfilial", referencedColumnName = "idfilial", nullable = false)
 	private Filial filial;
@@ -71,15 +68,7 @@ public class Estoque implements Serializable {
 	public void setValorUnitario(BigDecimal valorUnitario) {
 		this.valorUnitario = valorUnitario;
 	}	
-
-	/*public Set<Produto> getProdutos() {
-		return produtos;
-	}
-
-	public void setProdutos(Set<Produto> produtos) {
-		this.produtos = produtos;
-	}*/
-
+	
 	public BigDecimal getQuantidade() {
 		return quantidade;
 	}

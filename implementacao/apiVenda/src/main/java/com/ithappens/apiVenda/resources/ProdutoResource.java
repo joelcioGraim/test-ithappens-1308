@@ -37,13 +37,7 @@ public class ProdutoResource {
 	@ApiOperation(value = "Método responsável em trazer um Produto específico atravez de seu ID.")
 	public Produto getId(@PathVariable(value = "id") long id){
 		return produtoRepository.findById(id);
-	}
-	
-	/*@PostMapping("/produto")
-	@ApiOperation(value = "Método responsável em fazer a inserção de um novo Produto na base de dados.")
-	public Produto salvar(@RequestBody Produto produto){
-		return produtoRepository.save(produto);
-	}*/
+	}	
 	
 	@PutMapping("/produto")
 	@ApiOperation(value = "Método responsável em atualizar um Produto específico na base de dados.")

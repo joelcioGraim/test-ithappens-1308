@@ -37,11 +37,6 @@ public class Usuario implements Serializable {
 	@Column(length = 11)
 	private String cpf;
 
-	/* ============= Relacionamentos =============== */
-
-	/*@OneToMany(mappedBy = "usuario")
-	private Set<PedidoEstoque> pedidosEstoque;*/
-	
 	/* ============= Get / Set =============== */
 
 	public long getIdUsuario() {
@@ -84,12 +79,4 @@ public class Usuario implements Serializable {
 		this.cpf = cpf;
 	}
 
-/*	public Set<PedidoEstoque> getPedidosEstoque() {
-		return pedidosEstoque;
-	}
-
-	public void setPedidosEstoque(Set<PedidoEstoque> pedidosEstoque) {
-		this.pedidosEstoque = pedidosEstoque;
-	}
-*/
 }

@@ -36,23 +36,12 @@ public class ProdutoItemResource {
 	@ApiOperation(value = "Método responsável em trazer um ProdutoItem específico atravez de seu ID.")
 	public ProdutoItem getId(@PathVariable(value = "id") long id){
 		return produtoItemRepository.findById(id);
-	}
-	
-    /*@PostMapping("/produtoItem")
-	@ApiOperation(value = "Método responsável em fazer a inserção de um novo ProdutoItem na base de dados.")
-	public ProdutoItem salvar(@RequestBody ProdutoItem produtoItem){
-		return produtoItemRepository.save(produtoItem);
-	}*/
+	}    
 	
 	@PutMapping("/produtoItem")
 	@ApiOperation(value = "Método responsável em atualizar um ProdutoItem específico na base de dados.")
 	public ProdutoItem atualizar(@RequestBody ProdutoItem produtoItem){
 		return produtoItemRepository.save(produtoItem);
-	}
+	}	
 	
-	/*@DeleteMapping("/produtoItem")
-	@ApiOperation(value = "Método responsável em deletar um ProdutoItem na base de dados.")
-	public void deletar(@RequestBody ProdutoItem produtoItem){
-		produtoItemRepository.delete(produtoItem);
-	}*/
 }

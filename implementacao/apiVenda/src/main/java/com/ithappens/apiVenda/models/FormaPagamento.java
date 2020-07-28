@@ -30,12 +30,7 @@ public class FormaPagamento implements Serializable {
 	 */
 	@Column(length = 7)
 	private String descricao;
-
-	/* ============= Relacionamentos =============== */
-
-	/*@OneToMany(mappedBy = "formaPagamento")
-	private Set<PedidoEstoque> pedidosEstoque;*/
-	
+		
 	/* ============= Get / Set =============== */
 
 	public long getIdFormaPagamento() {
@@ -52,14 +47,6 @@ public class FormaPagamento implements Serializable {
 
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
-	}
-
-	/*public Set<PedidoEstoque> getPedidosEstoque() {
-		return pedidosEstoque;
-	}
-
-	public void setPedidosEstoque(Set<PedidoEstoque> pedidosEstoque) {
-		this.pedidosEstoque = pedidosEstoque;
-	}*/
+	}	
 
 }

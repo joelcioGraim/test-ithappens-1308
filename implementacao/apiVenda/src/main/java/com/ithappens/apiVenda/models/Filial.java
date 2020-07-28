@@ -43,14 +43,6 @@ public class Filial implements Serializable {
 	@Column(length = 7)
 	private String numero;
 
-	/* ============= Relacionamentos =============== */
-
-	/*@OneToMany(mappedBy = "filial")
-	private Set<Estoque> estoques;*/
-
-/*	@OneToMany(mappedBy = "filial")
-	private Set<PedidoEstoque> pedidosEstoque;*/
-
 	/* ============= Get / Set =============== */
 
 	public long getIdFilial() {
@@ -108,21 +100,5 @@ public class Filial implements Serializable {
 	public void setNumero(String numero) {
 		this.numero = numero;
 	}
-
-/*	public Set<Estoque> getEstoques() {
-		return estoques;
-	}
-
-	public void setEstoques(Set<Estoque> estoques) {
-		this.estoques = estoques;
-	}*/
-
-	/*public Set<PedidoEstoque> getPedidosEstoque() {
-		return pedidosEstoque;
-	}
-
-	public void setPedidosEstoque(Set<PedidoEstoque> pedidosEstoque) {
-		this.pedidosEstoque = pedidosEstoque;
-	}*/
 
 }
